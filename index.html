@@ -175,25 +175,24 @@ color:#4a5558;">
 <!-- SPEAKER -->
 <div style="
 position:absolute; 
-top:110px; 
-left:190px; 
-transform:rotate(-2deg); 
-font-size:45px; 
-font-weight:700; 
-color:white; 
-font-family:'Gloria Hallelujah', cursive; z-index:2;">
-<p>Rana Bamdadi</p>
-</div>
-<!-- LINK CARD -->
-<div style="
-position:absolute; 
-top:250px; 
-left:170px; 
+top:100px; 
+left:220px; 
 transform:rotate(-2deg); 
 font-size:40px; 
 font-weight:600; 
+color:#ffffff;
 font-family:'Gloria Hallelujah', cursive; z-index:2;">
-<p><a href="your-slide-link.com" style="color:#2b2b2b; text-decoration:none;"> FDA.is/your-link-here </a></p>
+<p>Rana Bamdadi</p>
+</div>
+<div style="
+position:absolute; 
+top:240px; 
+left:180px; 
+transform:rotate(-2deg); 
+font-size:35px; 
+font-weight:600; 
+font-family:'Gloria Hallelujah', cursive; z-index:2;">
+<p>rana.bamdadi@umu.se</p>
 </div>
 <!-- QR -->
 <div style="
@@ -242,16 +241,16 @@ position:relative;
 </div>
 <div style="position:absolute; top:140px; left:80px; width:600px; font-size:38px; line-height:1.5;">
 <ul>
-<li class="fragment">
+<li>
 Tree rings
 </li>
-<li class="fragment">
+<li>
 Ice core
 </li>
-<li class="fragment">
+<li>
 Glacier dynamics
 </li>
-<li class="fragment">
+<li>
 Lake and marine sediments
 </li>
 </ul>
@@ -272,31 +271,31 @@ Lake and marine sediments
 <div style="position:absolute; top:140px; left:80px; width:900px; font-size:22px; line-height:1.5;
 ">
 <ul>
-<li class="fragment" data-fragment-index="0">
+<li data-fragment-index="0">
 The full dataset contains roughly 6,400 annual profiles, each corresponding to one year.
 </li>
-<li class="fragment" data-fragment-index="1">
+<li data-fragment-index="1">
 These profiles were extracted from digital greyscale images of the sediment core, where each pixel has a value between 0 and 255.
 </li>
-<li class="fragment" data-fragment-index="2">
+<li data-fragment-index="2">
 For each year, a five-pixel-wide section of the image is sampled, and the mean grey-scale values are calculated to produce the final annual profile.
 </li>
 </ul>
-<div class="fragment" data-fragment-index="3" style="margin-top:25px; margin-left:35px;">
+<div data-fragment-index="3" style="margin-top:25px; margin-left:35px;">
 <p><b>Interpretation</b></p>
 </div>
 <ul style="margin-left:65px; margin-top:10px;">
-<li class="fragment" data-fragment-index="4">
+<li data-fragment-index="4">
 In spring, as the snow melts and runoff increase, minerogenic material is transported from the surrounding landscape into the lake. This produces a bright-colored layer in the sediment, representing high grey-scale values.
 </li>
-<li class="fragment" data-fragment-index="5">
+<li data-fragment-index="5">
 During summer, organic material produced mainly by lake organisms sinks to the bottom, forming a darker layer with lower grey-scale values.
 </li>
-<li class="fragment" data-fragment-index="6">
+<li data-fragment-index="6">
 In winter, under the ice cover, fine organic material is deposited, creating a thin dark layer, which is generally followed by the next spring’s bright mineral layer associated with snowmelt.
 </li>
 </ul>
-<div class="fragment" data-fragment-index="7" style="margin-top:25px; margin-left:5px;">
+<div data-fragment-index="7" style="margin-top:25px; margin-left:5px;">
 <p>Finally, Varves with similar yearly profiles correspond to similar weather conditions and each varve can be represented as a function, and we aim to group them into similar climate clusters by developing model-based functional clustering methods.</p>
 </div>
 </div>
@@ -324,53 +323,53 @@ width:800px;
 </div>
 <!-- Content -->
 <div style="position:absolute; top:110px; left:70px; width:1460px; font-size:28px; line-height:1.3;">
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 y_i(t_{ij}) = g_i(t_{ij})+\epsilon_i(t_{ij}),
 \qquad j=1,\ldots,n_i,\quad i=1,\ldots,N
 \]</span></p>
 </div>
-<p class="fragment">
+<p>
 <span class="math inline">\(y_i(t) \rightarrow\)</span> The observed function
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\epsilon_i(t) \rightarrow\)</span> iid measurement errors, normally distributed with mean zero and variance <span class="math inline">\(\sigma^2\)</span>
 </p>
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 g_i(t) = \boldsymbol{\phi}(t)^T \boldsymbol{\eta}_i
 \]</span></p>
 </div>
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 \boldsymbol{\eta}_i = \boldsymbol{\mu}_{z_i} + \boldsymbol{\gamma}_i
 \sim N_p(\boldsymbol{\mu}_{z_i},\Gamma_{z_i})
 \]</span></p>
 </div>
-<p class="fragment">
+<p>
 <span class="math inline">\(z_i \rightarrow\)</span> Cluster membership, <span class="math inline">\(P(z_i=k)=\pi_k\)</span>
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\boldsymbol{\mu}_{z_i} \rightarrow\)</span> Vector of expected spline coefficients for a cluster
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\boldsymbol{\gamma}_i \rightarrow\)</span> Within-cluster variability
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\Gamma_{z_i} \rightarrow\)</span> Cluster-specific variability
 </p>
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 \boldsymbol{\mu}_{k} = \boldsymbol{\lambda}_{0}+ \Lambda \boldsymbol{\alpha}_{k}
 \]</span></p>
 </div>
-<p class="fragment">
+<p>
 <span class="math inline">\(\boldsymbol{\lambda}_{0} \rightarrow\)</span> <span class="math inline">\(p\)</span>-dimensional vector
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\boldsymbol{\alpha}_{k} \rightarrow\)</span> <span class="math inline">\(h\)</span>-dimensional vector
 </p>
-<p class="fragment">
+<p>
 <span class="math inline">\(\Lambda \rightarrow\)</span> <span class="math inline">\(p \times h\)</span> matrix, <span class="math inline">\(h \leq G-1\)</span>
 </p>
 </div>
@@ -390,23 +389,23 @@ g_i(t) = \boldsymbol{\phi}(t)^T \boldsymbol{\eta}_i
 <!-- Content -->
 <div style="position:absolute; top:110px; left:70px; width:1460px; font-size:28px; line-height:1.3;">
 <!-- Step 1 -->
-<p class="fragment">
+<p>
 The measurement error process <span class="math inline">\(\epsilon_i(t)\)</span> is modeled as a zero-mean Gaussian process with exponential covariance
 </p>
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 \operatorname{cov}\big(\epsilon_i(t), \epsilon_i(t+h)\big)
 = \sigma^2 e^{-\theta |h|}
 \]</span></p>
 </div>
 <!-- Step 2 -->
-<p class="fragment">
+<p>
 For equidistant time points scaled to <span class="math inline">\([0,1], \quad t_{ij}-t_{i,j-1}=\frac{1}{n_i-1},\quad j=2,\ldots,n_i,\)</span>
 </p>
-<div class="fragment">
+<div>
 <p><span class="math display">\[\boldsymbol{\epsilon}_i \sim N_{n_i}(0,\sigma^2 T_i(\rho))\]</span></p>
 </div>
-<div class="fragment">
+<div>
 <p>where <span class="math display">\[
 T_i(\rho) =
 \begin{pmatrix}
@@ -434,16 +433,16 @@ T_i(\rho) =
 <!-- Content -->
 <div style="position:absolute; top:110px; left:70px; width:1460px; font-size:28px; line-height:1.3;">
 <!-- Step 3 -->
-<div class="fragment">
+<div>
 <p>We transform the correlated residuals into independent residuals using a Cholesky-type transformation.</p>
 </div>
-<div class="fragment">
+<div>
 <p>Assuming <span class="math inline">\(\rho\)</span> is known, we apply a Cholesky factorization</p>
 </div>
-<div class="fragment">
+<div>
 <p><span class="math display">\[T_i^{-1}(\rho) = C_i^T(\rho)\, C_i(\rho),\]</span></p>
 </div>
-<div class="fragment">
+<div>
 <p><span class="math display">\[
 C_i(\rho) = \frac{1}{\sqrt{1 - \rho^2}}
 \begin{pmatrix}
@@ -454,24 +453,24 @@ C_i(\rho) = \frac{1}{\sqrt{1 - \rho^2}}
 \end{pmatrix}.
 \]</span></p>
 </div>
-<div class="fragment">
+<div>
 <ul>
-<li class="fragment">
+<li>
 <span class="math inline">\(\tilde{\mathbf{y}}_i = C_i(\rho)\mathbf{y}_i,\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\tilde{\boldsymbol{\phi}}_i = C_i(\rho)\boldsymbol{\phi}_i,\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\tilde{\boldsymbol{\epsilon}}_i = C_i(\rho)\boldsymbol{\epsilon}_i\)</span> <span class="math inline">\(\Rightarrow\tilde{\boldsymbol{\epsilon}}_i \sim N_{n_i}(0,\sigma^2 \mathbf{I}_{n_i}).\)</span>
 </li>
-<li class="fragment">
+<li>
 Residual dependence is removed after transformation.
 </li>
 </ul>
 </div>
 <!-- Step 4 -->
-<div class="fragment">
+<div>
 <p>Then the standard IEM EM-algorithm can be applied to the transformed data.</p>
 </div>
 </div>
@@ -490,38 +489,38 @@ Residual dependence is removed after transformation.
 </div>
 <!-- IEM content -->
 <div style="position:absolute; top:130px; left:80px; width:1400px; font-size:28px; line-height:1.45;">
-<p class="fragment">
+<p>
 Same as IEM, but assumes independent variation in spline coefficients.
 </p>
 <ul>
-<li class="fragment">
+<li>
 <span class="math inline">\(\boldsymbol{\epsilon}_i \sim N(0, \sigma^2 I_{n_i})\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\boldsymbol{\eta}_i \sim N_p(\boldsymbol{\mu}_{z_i}, \Gamma_{z_i})\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\Gamma_{z_i} = \Gamma_k = \operatorname{diag}(\sigma_{k1}^2, \ldots, \sigma_{kp}^2)\)</span>
 </li>
 </ul>
 </div>
 <!-- Title 2 -->
-<div class="fragment" style="position:absolute; top:440px; left:60px; font-size:45px; font-weight:800;">
+<div style="position:absolute; top:440px; left:60px; font-size:45px; font-weight:800;">
 <p>Dependent Error Model with Diagonal <span class="math inline">\(\Gamma_k\)</span></p>
 </div>
 <!-- DEM content -->
 <div style="position:absolute; top:530px; left:80px; width:1400px; font-size:28px; line-height:1.45;">
-<p class="fragment">
+<p>
 Same as DEM, but simplifies the random-effects covariance.
 </p>
 <ul>
-<li class="fragment">
+<li>
 <span class="math inline">\(\boldsymbol{\epsilon}_i \sim N(\mathbf{0}, \sigma^2 T_i(\rho))\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\boldsymbol{\eta}_i \sim N_p(\boldsymbol{\mu}_{z_i}, \Gamma_{z_i})\)</span>
 </li>
-<li class="fragment">
+<li>
 <span class="math inline">\(\Gamma_{z_i} = \Gamma_k = \operatorname{diag}(\sigma_{k1}^2, \ldots, \sigma_{kp}^2)\)</span>
 </li>
 </ul>
@@ -572,32 +571,6 @@ Same as DEM, but simplifies the random-effects covariance.
 <h2></h2>
 <div class="fixed-slide">
 <p><img src="assets/thank.png" class="fixed-bg"></p>
-<!-- LINK CARD -->
-<div style="
-position:absolute;
-top:90px;
-left:150px;
-transform:rotate(5deg);
-background:#e9c89b;
-padding:12px 30px;
-border-radius:10px;
-font-size:34px;
-font-weight:700;
-color:#1f4a57;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-font-family:'Gloria Hallelujah', cursive;
-">
-<p><a href="your-slide-link.com" style="color:#2b2b2b; text-decoration:none;"> FDA.is/your-link-here </a></p>
-</div>
-<!-- PIN FOR LINK -->
-<div style="
-position:absolute;
-top:0.1px;
-left:180px;
-width:250px;
-transform:rotate(5deg);">
-<p><img src="assets/pin.png" style="width:100%; filter:drop-shadow(0 4px 6px rgba(0,0,0,0.35));"></p>
-</div>
 <!-- THANK YOU -->
 <div style="
 position:absolute;
@@ -612,7 +585,7 @@ color:#3f5f6a;">
 <div style="
 position:absolute;
 top:100px;
-right:200px;
+right:100px;
 transform:rotate(5deg);
 background:#1f4a57;
 padding:30px 40px;
